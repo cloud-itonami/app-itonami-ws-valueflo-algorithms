@@ -11,7 +11,7 @@
     **変換できない別形式として並存**。統合しない。
 - 経済観測: BLS QCEW（BigQuery public, NAICS 業種別週賃金）、CPI（R2 Iceberg
   `cloud_itonami.bq_public_bls_cpi_u`）。
-- 測定: `scripts/valueflow_evidence.py` を実行。stdout の **MEASURE<tab>key<tab>value 行**が
+- 測定: `scripts/valueflow_evidence.hy` を実行。stdout の **MEASURE<tab>key<tab>value 行**が
   この tick の測定になる。MEASURE 行だけを読み、それ以外の出力は読まない。
   台帳は `~/.hermes/profiles/wiki-valueflow-crawl/workspace/valueflow-ledger.jsonl`（append-only）。
 
